@@ -17,6 +17,12 @@
 	--p-font: 1.1rem;
 }
 
+body {
+	background: var(--bg-color);
+	color: var(--text-color);
+}
+
+/* HEADER */
 header {
 	position: fixed;
 	top: 0;
@@ -25,4 +31,57 @@ header {
 	z-index: 1000;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+	background: transparent;
+	padding: 30px 18%;
+	transition: ease .40s;
+}
+
+.logo {
+	font-size: 35px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: var(--text-color);
+}
+
+/*BARRA DE NAVEGAÇÃO */
+/* DEIXAR O BARRA DE NAVEGAÇÃO NA HORIZONTAL */
+.navbar {
+	display: flex;
+}
+
+/* TUNAR A BARRA DE NAVEGAÇÃO */
+.navbar a {
+	color: var(--text-color);
+	font-size: var(--p-font);
+	font-weight: 500;
+	padding: 10px 22px;
+	border-radius: 4px;
+	transition: ease .40s;
+}
+
+.navbar a:hover {
+	background: var(--bg-color);
+	color: var(--text-color);
+	box-shadow: 5px 10px 30px rgb(85 85 85 /20%);
+	border-radius: 4px;
+}
+/*BARRA DE NAVEGAÇÃO */
+/* HEADER */
+
+#menu-icon  {
+	color: var(--text-color);
+	font-size: 35px;
+	z-index: 10001;
+	cursor: pointer;
+	display: none;
+}
+
+/* HOME SECTION */
+section {
+	padding: 80px 18%;
+}
+
+.home{
+	
 }
