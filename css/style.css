@@ -77,7 +77,7 @@ header {
 	display: none;
 }
 
-/* HOME SECTION */
+                            /* HOME SECTION */
 section {
 	padding: 80px 18%;
 }
@@ -127,7 +127,7 @@ section {
 }
 
 /* EFEITO JS PARA A HOME DESCER JUNTO COM O SCROLL */
-header.sticky{
+header.sticky {
 	background: var(--bg-color);
 	padding: 10px 18%;
 	box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
@@ -137,5 +137,34 @@ header.sticky{
 	color: var(--text-color);
 }
 
-.sticky
-/* HOME SECTION */
+.sticky .navbar a {
+	color: var(--text-color);
+}
+
+.text h2{
+	font-size: var(--h2-font);
+	line-height: 1.1;
+}
+                            /* HOME SECTION */
+
+							/* CONTAINER */
+/* DEIXAR OS ITEMS UM NO LADO DO OUTRO */
+.row-items {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+	grid-gap: 2rem;
+	align-items: center;
+	text-align: center;
+	margin-top: 5rem;
+}
+
+/* bordinha dos items */
+.container-box {
+	background: var(--bg-color);
+	border: 1px solid #f0eded;
+	padding: 50px 10px;
+	border-radius: 4px;
+	transition: all 1s ease 0s;
+	cursor: pointer;
+}
+							/* CONTAINER */
